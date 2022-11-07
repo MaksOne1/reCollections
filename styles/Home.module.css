@@ -18,5 +18,5 @@
 }
 .collections {
 	display: flex;
-	overflow-x: auto;
+	/* overflow-x: auto; */
 }

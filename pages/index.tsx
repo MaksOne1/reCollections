@@ -2,6 +2,7 @@ import CollectionCard from '../components/CollectionCard'
 import { collections } from '../data/collections'
 import styles from '../styles/Home.module.css'
 import Head from 'next/head'
+import ScrollContainer from 'react-indiana-drag-scroll'
 
 export default function Home() {
 	return (
@@ -12,13 +13,13 @@ export default function Home() {
 			<div className={styles.container}>
 				<div className={styles.body}>
 					<h3 className={styles.title}>Подборки</h3>
-					<div className={styles.collections}>
+					<ScrollContainer horizontal={true} className={styles.collections}>
 						{collections.map(card => (
 							<div style={{ marginRight: '2rem', paddingTop: '1rem' }}>
 								<CollectionCard {...card} key={card.title} />
 							</div>
 						))}
-					</div>
+					</ScrollContainer>
 				</div>
 			</div>
 		</>

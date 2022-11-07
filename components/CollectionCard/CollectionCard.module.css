@@ -8,8 +8,19 @@
 	align-items: center;
 	padding: 1rem;
 	position: relative;
-
 	border-radius: 6px;
+}
+
+@media (max-width: 647px) {
+	.container {
+		min-width: 240px;
+		height: 150px;
+	}
+	.container img {
+		max-width: 130px;
+		height: 100%;
+		top: 2px !important;
+	}
 }
 
 .text {

@@ -13,7 +13,7 @@ export default function Home() {
 			<div className={styles.container}>
 				<div className={styles.body}>
 					<h3 className={styles.title}>Подборки</h3>
-					<ScrollContainer horizontal={true} className={styles.collections}>
+					<ScrollContainer vertical={false} className={styles.collections}>
 						{collections.map(card => (
 							<div style={{ marginRight: '2rem', paddingTop: '1rem' }}>
 								<CollectionCard {...card} key={card.title} />

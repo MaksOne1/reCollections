@@ -16,6 +16,11 @@
 	font-weight: 600;
 	margin-bottom: 2rem;
 }
+@media (max-width: 647px) {
+	.title {
+		margin-bottom: 1rem;
+	}
+}
 .collections {
 	display: flex;
 	/* overflow-x: auto; */

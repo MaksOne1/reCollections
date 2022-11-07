@@ -1,0 +1,38 @@
+.container {
+	min-width: 280px;
+	height: 180px;
+	display: flex;
+	width: 100%;
+	background-repeat: no-repeat !important;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 1rem;
+	position: relative;
+
+	border-radius: 6px;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	padding-right: 0.5rem;
+}
+
+.container img {
+	position: absolute;
+	top: -12px;
+	left: -1.5rem;
+}
+.text h4 {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 4px;
+	max-width: 100px;
+}
+.text p {
+	color: #c5c5c5;
+	line-height: 1.2;
+	font-size: 12px;
+	max-width: 100px;
+}
